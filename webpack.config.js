@@ -1,10 +1,12 @@
+var path = require('path');
+
 module.exports = {
   entry: [
     './src/index.js',
     './src/index.css'
   ],
   output: {
-    path: __dirname,
+    path: path.resolve(__dirname, 'dist'),
     publicPath: '/',
     filename: 'bundle.js'
   },
